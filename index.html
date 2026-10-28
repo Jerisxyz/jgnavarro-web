@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       SEO — Editar título y descripción cuando se confirme la info
+       ============================================================ -->
+  <title>José Guillermo Navarro · Abogado y Docente</title>
+  <meta name="description" content="Sitio personal de José Guillermo Navarro, abogado y docente. Perfil profesional, áreas de práctica y medios de contacto." />
+
+  <!-- Open Graph básico -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="José Guillermo Navarro · Abogado y Docente" />
+  <meta property="og:description" content="Perfil profesional, áreas de práctica y contacto directo." />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Favicon (SVG, configurable) -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon (1).svg" />
+
+  <!-- Tipografías: Cormorant Garamond (titulares) + Manrope (interfaz) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+<base target="_blank">
+</head>
+<body>
+
+  <!-- Barra de progreso de lectura -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+  <!-- ==================== NAVEGACIÓN ==================== -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="#inicio" class="nav__signature">José Guillermo Navarro</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#inicio" class="nav__link is-active" data-section="inicio">Inicio</a></li>
+        <li><a href="#perfil" class="nav__link" data-section="perfil">Perfil</a></li>
+        <li><a href="#areas" class="nav__link" data-section="areas">Áreas jurídicas</a></li>
+        <li><a href="#principios" class="nav__link" data-section="principios">Principios</a></li>
+        <li><a href="#contacto" class="nav__link" data-section="contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ==================== SECCIÓN 1 · HERO ==================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__halo hero__halo--1"></span>
+        <span class="hero__halo hero__halo--2"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <p class="hero__tag" data-hero="1"><span class="hero__tag-line"></span>ABOGADO · DOCENTE</p>
+
+        <h1 class="hero__title" id="hero-title" data-hero="2">
+          <span class="hero__title-row">José Guillermo</span>
+          <span class="hero__title-row hero__title-row--accent">Navarro</span>
+        </h1>
+
+        <p class="hero__phrase" data-hero="3">La palabra como instrumento; el derecho como oficio y enseñanza.</p>
+
+        <p class="hero__intro" data-hero="4">
+          Ejercicio de la abogacía con rigor, claridad y trato cercano, y formación
+          académica desde la docencia. Este espacio reúne mi perfil profesional y
+          mis medios de contacto directo.
+        </p>
+
+        <div class="hero__actions" data-hero="5">
+          <!--
+            TODO (CONTACTO): reemplazar href="#contacto" por "https://wa.me/34XXXXXXXXX"
+            cuando se confirme el número. Formato internacional sin + ni espacios.
+          -->
+          <a href="#contacto" class="btn btn--gold">Contactar</a>
+          <a href="#perfil" class="btn btn--ghost">Conocer mi perfil<span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <a href="#perfil" class="hero__scroll" aria-label="Desplazarse a la sección de perfil">
+        <span class="hero__scroll-track"><span class="hero__scroll-dot"></span></span>
+        <span class="hero__scroll-text">Desliza</span>
+      </a>
+    </section>
+
+    <!-- ==================== SECCIÓN 2 · PERFIL ==================== -->
+    <section class="profile section" id="perfil" aria-labelledby="perfil-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="section__label"><span></span>Perfil profesional</p>
+          <h2 class="section__title" id="perfil-title">Una perspectiva <em>profesional.</em></h2>
+        </div>
+
+        <div class="profile__grid">
+          <div class="profile__main" data-reveal>
+            <p class="profile__lead">
+              Soy abogado y docente. Dedico mi actividad profesional al ejercicio del
+              Derecho y a la enseñanza, dos caminos que comparten la misma convicción:
+              pensar con orden, argumentar con fundamento y comunicar con claridad.
+            </p>
+            <p>
+              Desde la práctica jurídica abordo cada asunto con estudio, seriedad y un
+              trato directo; desde la docencia, mantengo una relación constante con el
+              rigor y la actualización permanente. Entiendo el ejercicio de la
+              profesión como un compromiso cotidiano con la persona que confía su
+              consulta.
+            </p>
+            <!--
+              TODO (BIOGRAFÍA): sustituir / ampliar los párrafos anteriores con la
+              trayectoria real: formación académica, años de ejercicio, ámbitos
+              docentes y cualquier dato confirmado por el abogado.
+            -->
+          </div>
+
+          <aside class="profile__aside" data-reveal data-reveal-delay="150">
+            <p class="profile__aside-label">Enfoque</p>
+            <ul class="profile__list">
+              <li>Análisis riguroso de cada consulta</li>
+              <li>Comunicación clara, sin jerga innecesaria</li>
+              <li>Cercanía y trato directo</li>
+            </ul>
+            <div class="profile__divider" aria-hidden="true"></div>
+            <p class="profile__note">
+              Formación, trayectoria y datos académicos se incorporarán próximamente,
+              previa confirmación.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN 3 · ÁREAS JURÍDICAS ====================
+         IMPORTANTE: las áreas siguientes son una ESTRUCTURA DE EJEMPLO para el
+         diseño. NO constituyen servicios confirmados.
+
+         Para publicar un área como servicio real:
+           1. Edita título y descripción con la información autorizada.
+           2. Cambia data-confirmada="false" por data-confirmada="true".
+         Las entradas no confirmadas se muestran con una nota visual.
+         Para eliminar un área, borra todo el <article> correspondiente.
+         ==================================================================== -->
+    <section class="areas section section--dark" id="areas" aria-labelledby="areas-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="section__label section__label--light"><span></span>Áreas de práctica</p>
+          <h2 class="section__title" id="areas-title">Ámbitos del <em>derecho.</em></h2>
+          <p class="areas__note">
+            Sección en preparación: las áreas que se muestran son una estructura
+            editorial de ejemplo, pendientes de confirmación por el abogado.
+          </p>
+        </div>
+
+        <ol class="areas__list" id="areasList" data-stagger>
+          <li data-confirmada="false">
+            <article class="area">
+              <span class="area__num" aria-hidden="true">01</span>
+              <div class="area__body">
+                <h3 class="area__title">Derecho civil</h3>
+                <p class="area__desc">Área de ejemplo · pendiente de confirmar la descripción del servicio.</p>
+              </div>
+              <span class="area__mark" aria-hidden="true">→</span>
+            </article>
+          </li>
+          <li data-confirmada="false">
+            <article class="area">
+              <span class="area__num" aria-hidden="true">02</span>
+              <div class="area__body">
+                <h3 class="area__title">Derecho penal</h3>
+                <p class="area__desc">Área de ejemplo · pendiente de confirmar la descripción del servicio.</p>
+              </div>
+              <span class="area__mark" aria-hidden="true">→</span>
+            </article>
+          </li>
+          <li data-confirmada="false">
+            <article class="area">
+              <span class="area__num" aria-hidden="true">03</span>
+              <div class="area__body">
+                <h3 class="area__title">Derecho laboral</h3>
+                <p class="area__desc">Área de ejemplo · pendiente de confirmar la descripción del servicio.</p>
+              </div>
+              <span class="area__mark" aria-hidden="true">→</span>
+            </article>
+          </li>
+          <li data-confirmada="false">
+            <article class="area">
+              <span class="area__num" aria-hidden="true">04</span>
+              <div class="area__body">
+                <h3 class="area__title">Derecho administrativo</h3>
+                <p class="area__desc">Área de ejemplo · pendiente de confirmar la descripción del servicio.</p>
+              </div>
+              <span class="area__mark" aria-hidden="true">→</span>
+            </article>
+          </li>
+          <li data-confirmada="false">
+            <article class="area">
+              <span class="area__num" aria-hidden="true">05</span>
+              <div class="area__body">
+                <h3 class="area__title">Derecho de familia</h3>
+                <p class="area__desc">Área de ejemplo · pendiente de confirmar la descripción del servicio.</p>
+              </div>
+              <span class="area__mark" aria-hidden="true">→</span>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN 4 · PRINCIPIOS ==================== -->
+    <section class="principles section" id="principios" aria-labelledby="principios-title">
+      <div class="container">
+        <div class="principles__layout">
+          <div class="principles__head" data-reveal>
+            <p class="section__label"><span></span>Principios</p>
+            <h2 class="section__title" id="principios-title">Forma de <em>trabajar.</em></h2>
+            <p class="principles__intro">
+              Tres ideas guían mi manera de ejercer la profesión y de enseñar.
+              Textos generales, revisables antes de la publicación definitiva.
+            </p>
+          </div>
+
+          <ul class="principles__list" data-stagger>
+            <li class="principle" data-reveal>
+              <span class="principle__index">I</span>
+              <h3 class="principle__title">Responsabilidad</h3>
+              <p>Cada consulta merece estudio, honestidad y una respuesta fundada. No se promete lo que no depende de uno.</p>
+            </li>
+            <li class="principle" data-reveal data-reveal-delay="120">
+              <span class="principle__index">II</span>
+              <h3 class="principle__title">Claridad</h3>
+              <p>Explicar sin jerga innecesaria para que cada decisión se tome con información comprensible y veraz.</p>
+            </li>
+            <li class="principle" data-reveal data-reveal-delay="240">
+              <span class="principle__index">III</span>
+              <h3 class="principle__title">Compromiso</h3>
+              <p>Acompañar el asunto con cercanía y dedicación, manteniendo la independencia y el rigor profesional.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN 5 · CONTACTO ==================== -->
+    <section class="contact section section--navy" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="contact__inner" data-reveal>
+          <p class="section__label section__label--gold"><span></span>Contacto</p>
+          <h2 class="contact__title" id="contacto-title">Hablemos de <em>su consulta.</em></h2>
+          <p class="contact__text">
+            Si desea plantearme una consulta o conocer más sobre mi perfil, puede
+            escribirme directamente. Responderé con la mayor brevedad posible.
+          </p>
+
+          <div class="contact__actions">
+            <!--
+              TODO (WHATSAPP): sustituir "#" por "https://wa.me/34XXXXXXXXX"
+              (código de país + número, sin símbolos ni espacios).
+            -->
+            <a href="#" class="btn btn--gold btn--lg" id="whatsappBtn"
+               aria-label="Contactar por WhatsApp (enlace pendiente de configurar)">
+              <svg class="btn__icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.4-.5a.5.5 0 0 0 .1-.5c0-.1-.6-1.5-.8-2s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4 5.5 5.5 0 0 0 3.3.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/>
+              </svg>
+              Contactar por WhatsApp
+            </a>
+
+            <!--
+              TODO (EMAIL): sustituir "#" por "mailto:nombre@dominio.com"
+              cuando se confirme la dirección de correo.
+            -->
+            <a href="#" class="contact__mail" id="emailBtn"><span class="__cf_email__" data-cfemail="bbd8d4c9c9ded4fbcbded5dfd2ded5cfde96dfde96d8d4d5ddd2c9d6dac995d8d4d6">[email&#160;protected]</span></a>
+          </div>
+
+          <p class="contact__pending" id="contactPending" role="note">
+            Los enlaces de contacto se activarán en cuanto se confirmen los datos.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== PIE DE PÁGINA ==================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__name">José Guillermo Navarro</p>
+      <nav class="footer__nav" aria-label="Navegación del pie de página">
+        <a href="#inicio">Inicio</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#areas">Áreas jurídicas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer__legal">© <span id="year">2025</span> José Guillermo Navarro. Todos los derechos reservados.</p>
+      <p class="footer__credit">Diseño y desarrollo por <span>Veltrix Soft</span></p>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js" defer></script>
+</body>
+</html>
